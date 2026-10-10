@@ -1,0 +1,62 @@
+body {
+    background-color: rgb(221, 233, 237);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    margin: 0%;  
+}
+nav ul{
+    display: flex;
+    margin: 0;
+    padding: 10px;
+    background-color: rgb(3, 3, 64);
+    color: aliceblue;
+    justify-content: space-between;
+   
+    
+}
+nav li{
+    color: aliceblue;
+    padding: 10px;
+    list-style: none;
+    text-align: center;
+    background-color: rgb(173, 203, 226);
+    border-radius: 7px;
+}
+nav a{
+    text-decoration-line: none;
+    color: aliceblue;
+    padding: 10px;
+    text-align: center;
+}
+#Home {
+    text-align: center;
+    background-color:  rgb(221, 233, 237) ;
+}
+h2{
+    text-align: center;
+
+}
+h4{
+    text-align: center;
+
+}
+
+#AboutMe  h4{
+    text-align: center;
+    margin:10px;
+}
+
+#AboutMe p{
+    text-align: justify;
+    margin: 20px;
+}
+
+#Contact h4{
+    text-align: center;
+}
+
+#Contact p{
+    text-align:center;
+}
