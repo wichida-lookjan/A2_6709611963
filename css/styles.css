@@ -11,13 +11,13 @@ nav ul{
     margin: 0;
     padding: 10px;
     background-color: rgb(3, 3, 64);
-    color: aliceblue;
+    
     justify-content: space-between;
    
     
 }
 nav li{
-    color: aliceblue;
+    
     padding: 10px;
     list-style: none;
     text-align: center;
@@ -26,7 +26,7 @@ nav li{
 }
 nav a{
     text-decoration-line: none;
-    color: aliceblue;
+    color: rgb(119, 144, 165);
     padding: 10px;
     text-align: center;
 }
@@ -43,12 +43,12 @@ h4{
 
 }
 
-#AboutMe  h4{
+#MyProfile  h4{
     text-align: center;
     margin:10px;
 }
 
-#AboutMe p{
+#MyProfile p{
     text-align: justify;
     margin: 20px;
 }
