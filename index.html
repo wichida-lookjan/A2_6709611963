@@ -5,80 +5,146 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+        </script>
     <link rel="stylesheet" href="css/styles.css">
 
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#MyProfile">My Profile</a></li>
-                <li><a href="#MyPortfolio">My Portfolio</a></li>
-                <li><a href="#Contact">Contact</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark relative-position">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Wichida/Learning Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbartoggler">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbartoggler">
+                    <div class="nav d-flex justify-content-end">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="#Home">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#MyProfile">My Profile</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#MyPortfolio">My Portfolio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
-        <section id="Home">
-            <h2>My Website</h2>
+        <section id="Home" class="vh-100 pt-5 align-item-center" style="background-color:beige;">
+            <div class="container-fluid text-center mt-5" id="#Home">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="display-6">Welcome To My Learning Portfolio Website</h2>
+                        <h4 class="text-center mt-3">This is a part of CS100 subject.</h4>
+                    </div>
+                </div>
+            </div>
+            </div>
         </section>
 
-        <section id="#MyProfile">
-            <h4>About me</h4>
-            <p>Name:วิชิดา ลูกจันทร์ </p>
-            <p>Student ID: 6709611963</p>
-            <p>นักศึกษาชั้นปีที่ 3 คณะวิทยาศาสตร์และเทศโนโลยี สาขาคณิตศาสตร์และสถิติ ภาควิชาสถิติ</p>
-            <p>มีความสนใจในวิชาของภาควิทยาการคอมพิวเตอร์และคิดว่าในอนาคตสามารถนำมาปรับใช้กับการใช้ข้อมูลทางสถิติได้จึงเลือกวิชาต่าง
-                ๆของสาขานี้เป็นวิชาเรียนMinor</p>
+        <section id="MyProfile" class="bg-secondary py-5">
+            <div class="contrainer pt-3" id="MyProfile">
+                <div class="row me-4 ms-4 align-item-center mt-5">
+                    <div class="col-12 col-md-6 mb-4">
+                        <div class="card rounded-3 shadow-lg border-0 mb-5 me-3 border-dark h-100">
+                            <div class="card-body">
+                                <h4 class="fs-bold">Student card</h4>
+                                <p><strong>Name:</strong>วิชิดา ลูกจันทร์ </p>
+                                <p><strong>Student ID:</strong>6709611963</p><br><br>
+                                <a href="#Moreinfo" class="btn btn-primary">More info</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 mb-4">
+                        <div class="card rounded-3 shadow-lg border-0 mb-5 border-dark h-100" id="Moreinfo">
+                            <div class="card-body">
+                                <h4 class="fs-bold">More information</h4>
+                                <p><strong>Major:</strong>นักศึกษาชั้นปีที่ 3 คณะวิทยาศาสตร์และเทศโนโลยี
+                                    สาขาคณิตศาสตร์และสถิติ ภาควิชาสถิติ</p>
+                                <p><strong>Interest:</strong>มีความสนใจในวิชาของภาควิทยาการคอมพิวเตอร์
+                                    และคิดว่าในอนาคตสามารถนำมาปรับใช้กับการใช้ข้อมูลทางสถิติได้จึงเลือกวิชาต่าง ๆ
+                                    ของสาขานี้เป็นวิชาเรียนMinor</p>
+                                <a href="#MyPortfolio" class="btn btn-primary">My Portfolio</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="#MyPortfolio">
-            <h4>ตัวอย่างงานที่1</h4>
-            <p>Title:CS100:My First Learning Portfolio
-            <p>Type:Course Assignment</p>
-            <p>Date:30 August </p>
-            <p>Role:Individual Developer</p>
-            <p>Description:พัฒนาเว็บไซต์ ให้เป็นsingle page website โดยใช้ HTML และ CSS</p>
-            <p>Skills:HTML,CSS,Semantig tag such as nav, section, footer </p>
-            <p>Reflection:ในงานที่ 1 งานMy First Learning Portfolio ฉันได้ใช้ HTMLและCSS
-                ในการทำเว็บไซต์โดยเป็นเว็บแบบหน้าเดียว
-                อีกทั้งยังได้ใช้ Semantig tag
-                มาเป็นส่วนประกอบของการทำเว็บครั้งนี้ซึ่งทำให้ฉันได้เรียนรู้เกี่ยวกับSemantig tag
-                มากขึ้นไม่ว่าจะเป็นในส่วนของการทำNav bar
-                เพื่อลิงค์ไปยังหน้าส่วนต่าง ๆ ที่ฉันได้แบ่งเนื้อหาข้างในเป็น section
-                แต่ระหว่างการทำงานก้พบปัญหาบ้างเนื่องจากยังไม่เคยใช้semantig tag
-                มาก่อนทำให้อาจมีปัญหาในการเชื่อมโยงกับ CSS ว่าถ้าทำตรงนี้หน้าเว็บจะออกมาเป็นแบบที่ต้องการหรือไม่
-                แต่เมื่อได้ศึกษาและลองผิดลองถูกมามากมายก็ทำให้เข้าใจเพิ่มมากขึ้นและอยากทำให้เว็บนี้ดูดี
-                ดูทันสมัยและมืออาชีพมากขึ้น </p>
-            <p>Evidence: </p>
-            <img src="media/Deploy web.jpg" alt="Deploy web"> <br><br>
+        <section id="MyPortfolio" style="background-color: bisque;">
+            <div class="container justify-content-between pt-4" id="MyPortfolio">
+                <div class="row align-items-start">
+                    <div class="col-12 col-md-8 mb-4 ">
+                        <h4>ตัวอย่างงานที่1</h4>
+                        <p>Title:CS100:My First Learning Portfolio
+                        <p>Type:Course Assignment</p>
+                        <p>Date:30 August </p>
+                        <p>Role:Individual Developer</p>
+                        <p>Description:พัฒนาเว็บไซต์ ให้เป็นsingle page website โดยใช้ HTML และ CSS</p>
+                        <p>Skills:HTML,CSS,Semantig tag such as nav, section, footer </p>
+                        <p>Reflection:ในงานที่ 1 งาน My First Learning Portfolio ฉันได้ใช้ HTMLและCSS
+                            ในการทำเว็บไซต์โดยเป็นเว็บแบบหน้าเดียว
+                            อีกทั้งยังได้ใช้ Semantig tag
+                            มาเป็นส่วนประกอบของการทำเว็บครั้งนี้ซึ่งทำให้ฉันได้เรียนรู้เกี่ยวกับSemantig tag
+                            มากขึ้นไม่ว่าจะเป็นในส่วนของการทำNav bar
+                            เพื่อลิงค์ไปยังหน้าส่วนต่าง ๆ ที่ฉันได้แบ่งเนื้อหาข้างในเป็น section
+                            แต่ระหว่างการทำงานก้พบปัญหาบ้างเนื่องจากยังไม่เคยใช้semantig tag
+                            มาก่อนทำให้อาจมีปัญหาในการเชื่อมโยงกับ CSS
+                            ว่าถ้าทำตรงนี้หน้าเว็บจะออกมาเป็นแบบที่ต้องการหรือไม่
+                            แต่เมื่อได้ศึกษาและลองผิดลองถูกมามากมายก็ทำให้เข้าใจเพิ่มมากขึ้นและอยากทำให้เว็บนี้ดูดี
+                            ดูทันสมัยและมืออาชีพมากขึ้น </p>
+                    </div>
+                    <div class="container col-12 col-md-4 mb-4">
+                        <p>Evidence: </p>
+                        <img src="media/Deploy web.jpg" class="img-fluid" alt="Deploy web">
+                    </div>
+                </div>
 
-
-            <h4>ตัวอย่างงานที่2</h4>
-            <p>Title:My First CS100 Repo</p>
-            <p>Type:Excersise</p>
-            <p>Date:3 August 2026</p>
-            <p>Role:Class participants</p>
-            <p>Description: ฝึกเกี่ยวกับการทำงานของLocal และ Remote repos บนGitHub</p>
-            <p>Skills:HTML, CSS, Git</p>
-            <p>Reflection:หลังจากเรียนเรียนเรื่อง Basic git ไปครั้งนี้จึงได้ลองสร้าง new repo และได้ใช้git ต่าง ๆ
-                ซึ่งทำให้ฉันได้เรียนรู้และเข้าใจเกี่ยวกับgitมากขึ้นไม่ว่าจะเป็น git add, git commit, git
-                pushผ่านTerminal ของHTMLในการดันงานขึ้น บนGitHub
-                แต่ก็มีส่วนที่ท้าทายสำหรับฉันเพราะบางจุดก็มีไม่เข้าใจบ้างว่า ตอนนี้ต้องทำgitอะไร
-                จึงลองไล่ดูทีละขั้นว่าพลาดตรงไหน
-                ถ้าพัฒนาต่อก็อยากใช้ให้คล่องเพื่อที่เราสามารถนำไปปรับใช้กับงานหน้าได้</p>
-            <p>Evidence:<a href="https://github.com/wichida-lookjan/myfirstcs100repo"> GitHub Repository </a></p>
-            <img src="media/GitHub Repo.jpg" alt="GitHub Repository ของตัวอย่างงานที่2">
-
+                <div class="row align-items-start mt-5">
+                    <div class="col-12 col-md-8 mb-4">
+                        <h4>ตัวอย่างงานที่2</h4>
+                        <p>Title:My First CS100 Repo</p>
+                        <p>Type:Excersise</p>
+                        <p>Date:3 August 2026</p>
+                        <p>Role:Class participants</p>
+                        <p>Description: ฝึกเกี่ยวกับการทำงานของLocal และ Remote repos บนGitHub</p>
+                        <p>Skills:HTML, CSS, Git</p>
+                        <p>Reflection:หลังจากเรียนเรียนเรื่อง Basic git ไปครั้งนี้จึงได้ลองสร้าง new repo และได้ใช้git
+                            ต่าง ๆ
+                            ซึ่งทำให้ฉันได้เรียนรู้และเข้าใจเกี่ยวกับgitมากขึ้นไม่ว่าจะเป็น git add, git commit, git
+                            pushผ่านTerminal ของHTMLในการดันงานขึ้น บนGitHub
+                            แต่ก็มีส่วนที่ท้าทายสำหรับฉันเพราะบางจุดก็มีไม่เข้าใจบ้างว่า ตอนนี้ต้องทำgitอะไร
+                            จึงลองไล่ดูทีละขั้นว่าพลาดตรงไหน
+                            ถ้าพัฒนาต่อก็อยากใช้ให้คล่องเพื่อที่เราสามารถนำไปปรับใช้กับงานหน้าได้
+                        </p>
+                    </div>
+                    <div class="container col-12 col-md-4 mb-4">
+                        <p>Evidence:<a href="https://github.com/wichida-lookjan/myfirstcs100repo"> GitHub Repository</a>
+                        </p>
+                        <img src="media/GitHub Repo.jpg" class="img-fluid" alt="GitHub Repository ของตัวอย่างงานที่2">
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <footer id="Contact">
-            <h4>Contact</h4>
-            <p>Email:<a href="mailto:wichidalookjan@gmail.com">wichidalookjan@gmail.com </a></p>
-            <p>Email(@dome):<a href="mailto:wichida.loo@dome.tu.ac.th">wichida.look@dome.tu.ac.th </a></p>
-        </footer>
+        <section id="Contact" class="bg-dark text-white py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-6">
+                        <h4>Contact</h4>
+                        <p>Email:<a href="mailto:wichidalookjan@gmail.com">wichidalookjan@gmail.com </a></p>
+                        <p>Email(@dome):<a href="mailto:wichida.loo@dome.tu.ac.th">wichida.look@dome.tu.ac.th </a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
 </body>

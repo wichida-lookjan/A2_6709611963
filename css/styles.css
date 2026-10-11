@@ -1,5 +1,4 @@
 body {
-    background-color: rgb(221, 233, 237);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -7,33 +6,16 @@ header {
     margin: 0%;  
 }
 nav ul{
-    display: flex;
+    
     margin: 0;
     padding: 10px;
-    background-color: rgb(3, 3, 64);
-    
-    justify-content: space-between;
-   
-    
 }
-nav li{
-    
-    padding: 10px;
-    list-style: none;
-    text-align: center;
-    background-color: rgb(173, 203, 226);
-    border-radius: 7px;
-}
+
 nav a{
-    text-decoration-line: none;
-    color: rgb(119, 144, 165);
     padding: 10px;
-    text-align: center;
+    color: aliceblue;
 }
-#Home {
-    text-align: center;
-    background-color:  rgb(221, 233, 237) ;
-}
+
 h2{
     text-align: center;
 
@@ -54,9 +36,8 @@ h4{
 }
 
 #Contact h4{
-    text-align: center;
+    color: white;
 }
-
 #Contact p{
-    text-align:center;
+    color: white;
 }
